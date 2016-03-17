@@ -12,9 +12,17 @@ def main():
     n = raw_input(tekst)
 
     while( n.isdigit() != True ):
+        if(int(n.strip()) < random):
+            print("Too low")
+        else:
+            print("Too high")
         n = raw_input(tekst)
 
-    while int(n.strip()) != random:
+    while(int(n.strip()) != random):
+        if(int(n.strip()) < random):
+            print("Too low")
+        else:
+            print("Too high")
         n = raw_input(tekst)
         while( n.isdigit() != True ):
             n = raw_input(tekst)
