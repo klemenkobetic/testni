@@ -4,8 +4,10 @@ import sys
 from __builtin__ import str
 
 def main():
+    st = int(raw_input("Vpisi stevilko med 1 in 100: "))
+
     result=""
-    for x in range(1, 100):
+    for x in range(1, st+1):
         result=""
         if(x % 3 == 0):
             result="fizz"
